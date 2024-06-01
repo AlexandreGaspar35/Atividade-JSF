@@ -1,0 +1,116 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Centralize o formulário */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 1;
+    background-color: #f7f8fc;
+}
+
+/* Estilo do conteúdo */
+.main_content {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+/* Cabeçalho */
+.header {
+    
+    
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #357abd;
+}
+
+.section_title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* Caixa do formulário */
+.box-artigo {
+    padding: 30px;
+}
+
+/* Estilo do formulário */
+.formularioContato {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form_group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form_label {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Estilo do input */
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Estilo do botão */
+.boton {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #357abd;
+}
+
+/* Lista de usuários cadastrados */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* Estilo do título da lista */
+h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}

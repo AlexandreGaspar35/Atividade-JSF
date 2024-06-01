@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="_css/main.css" />
+</h:head>
+
+<h:body>
+<!-- Formulário de cadastro -->
+<h1>Cadastro de usuário</h1>
+<h:form id="cadastro">
+</h:form>
+  <h:panelGrid styleClass="main_content container">
+      <h:panelGrid styleClass="header">
+          <h:outputText value="Cadastro de Usuário" styleClass="section_title" />
+      </h:panelGrid>
+      <h:panelGrid styleClass="section-seu-codigo container">
+          <h:panelGrid styleClass="content">
+              <h:panelGrid styleClass="box-artigo">
+                  <h:panelGrid styleClass="formularioContato">
+                      <h:form>
+                          <div class="form_group">
+                              <h:outputLabel for="username" value="Nome do Usuário:" styleClass="form_label" />
+                              <h:inputText styleClass="input" id="username" value="#{userBean.username}" />
+                          </div>
+                          <h:commandButton styleClass="boton" value="Cadastrar" action="#{userBean.addUsername}" />
+                      </h:form>
+                      <h3>Usuário Cadastrado:</h3>
+                      <ul>
+                          <ui:repeat value="#{userBean.userList}" var="user">
+                              <li>#{user}</li>
+                          </ui:repeat>
+                      </ul>
+                  </h:panelGrid>
+              </h:panelGrid>
+          </h:panelGrid>
+      </h:panelGrid>
+  </h:panelGrid>
+</h:body>
+</html>
